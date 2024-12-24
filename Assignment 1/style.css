@@ -85,8 +85,10 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 90px;
     padding: 50px 20px;
     background-color: #333;
+
 }
 
 .CTA-container button {
@@ -263,11 +265,15 @@ button[type="submit"]:hover {
     padding: 20px;
     max-width: 300px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-item img {
     width: 100%;
     border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .project-item-title {
@@ -281,6 +287,7 @@ button[type="submit"]:hover {
     color: #666;
     margin-top: 10px;
     line-height: 1.6;
+    text-align: center;
 }
 
 /* Experience */
@@ -290,7 +297,6 @@ button[type="submit"]:hover {
     padding: 50px 20px;
     text-align: center;
 }
-
 
 /* Footer styling */
 .footer-container {
@@ -352,5 +358,35 @@ button[type="submit"]:hover {
     .footer-links {
         flex-direction: column;
         gap: 10px;
+    }
+}
+@media (max-width: 767px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-container {
+        order: 1;
+    }
+
+    .hero img {
+        order: 3;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .hero-lorem {
+        order: 2;
+    }
+
+    .CTA-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #333;
     }
 }
