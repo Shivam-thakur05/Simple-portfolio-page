@@ -381,4 +381,7 @@ button[type="submit"]:hover {
         padding: 20px;
         background-color: #333;
     }
+    #menu-icon {
+        display: block;
+    }
 }

@@ -1,9 +1,8 @@
 // script.js
 document.getElementById('menu-icon').addEventListener('click', function() {
-    const navLinks = document.getElementById('nav-links');
-    navLinks.classList.toggle('active');
+    var navbar = document.getElementById('nav-links');
+    navbar.classList.toggle('show');
 });
-
 function scrollToSection(sectionId) {
     document.getElementById(sectionId).scrollIntoView({
         behavior: 'smooth'
